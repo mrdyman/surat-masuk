@@ -8,7 +8,6 @@ D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Perpus_Skripsi\obj\Debug\Surat_Ma
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Perpus_Skripsi\obj\Debug\Surat_Masuk.csproj.CoreCompileInputs.cache
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Perpus_Skripsi\obj\Debug\Perpus_Skripsi.exe
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Perpus_Skripsi\obj\Debug\Perpus_Skripsi.pdb
-D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.csprojAssemblyReference.cache
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.exe.config
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Perpus_Skripsi.Home.resources
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.Properties.Resources.resources
@@ -111,3 +110,4 @@ D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\bin\Debug\zh-CHT\Micr
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.csproj.CopyComplete
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.exe
 D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.pdb
+D:\Kampus\Semester 7\KP\Program KP\Surat_Masuk\Surat_Masuk\obj\Debug\Surat_Masuk.csprojAssemblyReference.cache

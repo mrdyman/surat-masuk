@@ -270,5 +270,70 @@ namespace Surat_Masuk
             }
             return spd;
         }
+
+
+        public static int DeleteSurat(int id)
+        {
+            int r = -1;
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+            {
+                conn.Open();
+                using (SQLiteCommand cmd = new SQLiteCommand(conn))
+                {
+                    cmd.CommandText = "DELETE FROM data_surat WHERE id = @id";
+                    cmd.Prepare();
+                    cmd.Parameters.AddWithValue("@id", id.ToString());
+                    try
+                    {
+                        r = cmd.ExecuteNonQuery();
+                    }
+                    catch (SQLiteException e)
+                    {
+                        throw;
+                    }
+                }
+                conn.Close();
+            }
+            return r;
+        }
+
+        public static Surat GetSuratById(int id)
+        {
+            Surat p = new Surat();
+            try
+            {
+                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM data_surat WHERE id = @id";
+                    using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
+                    {
+                        cmd.Prepare();
+                        cmd.Parameters.AddWithValue("@id", id);
+                        using (SQLiteDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                p.id = Int32.Parse(reader["id"].ToString());
+                                p.nomor_berkas = reader["nomor_berkas"].ToString();
+                                p.alamat = reader["alamat"].ToString();
+                                p.tgl = reader["tgl"].ToString();
+                                p.perihal = reader["perihal"].ToString();
+                                p.nomor_petunjuk = reader["nomor_petunjuk"].ToString();
+                                p.ket = reader["ket"].ToString();
+                                p.jenis_surat = reader["jenis_surat"].ToString();
+                            }
+                        }
+                    }
+                    conn.Close();
+                }
+            }
+            catch (SQLiteException e)
+            {
+                throw;
+            }
+            return p;
+        }
+
     }
 }

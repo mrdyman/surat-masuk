@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.DataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.materialRaisedButton3 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton4 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
@@ -46,6 +47,7 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
@@ -79,8 +81,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable1BindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -108,6 +108,14 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "SURAT KELUAR";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(1205, 10);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(262, 31);
+            this.textBox3.TabIndex = 12;
+            this.textBox3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox3_KeyUp);
             // 
             // materialRaisedButton3
             // 
@@ -250,6 +258,14 @@
             this.tabPage2.Text = "SURAT MASUK";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(1205, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(262, 31);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyUp);
+            // 
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.AutoSize = true;
@@ -328,38 +344,41 @@
             // 
             // no
             // 
+            this.no.DisplayIndex = 0;
             this.no.Text = "No";
             // 
             // no_berkas
             // 
+            this.no_berkas.DisplayIndex = 1;
             this.no_berkas.Text = "Nomor Berkas";
             this.no_berkas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.no_berkas.Width = 200;
             // 
             // alamat
             // 
+            this.alamat.DisplayIndex = 2;
             this.alamat.Text = "Alamat";
             this.alamat.Width = 300;
             // 
             // tgl
             // 
+            this.tgl.DisplayIndex = 3;
             this.tgl.Text = "Tanggal";
             this.tgl.Width = 200;
             // 
             // perihal
             // 
+            this.perihal.DisplayIndex = 4;
             this.perihal.Text = "Perihal";
             this.perihal.Width = 150;
             // 
             // no_petunjuk
             // 
-            this.no_petunjuk.DisplayIndex = 6;
             this.no_petunjuk.Text = "No. Petunjuk";
             this.no_petunjuk.Width = 150;
             // 
             // ket
             // 
-            this.ket.DisplayIndex = 7;
             this.ket.Text = "Keterangan";
             this.ket.Width = 150;
             // 
@@ -679,22 +698,6 @@
             this.materialTabSelector1.Size = new System.Drawing.Size(1542, 35);
             this.materialTabSelector1.TabIndex = 0;
             this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(1205, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(262, 31);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox1_KeyUp);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(1205, 10);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(262, 31);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TextBox3_KeyUp);
             // 
             // Form1
             // 

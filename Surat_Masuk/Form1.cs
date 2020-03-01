@@ -64,6 +64,12 @@ namespace Surat_Masuk
             }
         }
 
+        public void RefAllDataSurat()
+        {
+            RefDataSurat_Masuk();
+            RefDataSurat_Keluar();
+        }
+
         public void RefDataSurat_Keluar()
         {
             mlvpsik.Items.Clear();
@@ -93,7 +99,7 @@ namespace Surat_Masuk
         private void MlvDataSkripsi_DoubleClick(object sender, EventArgs e)
         {
             Form2 dspd = new Form2();
-            dspd.id = Int32.Parse(mlvDataSkripsi.SelectedItems[0].SubItems[4].Text);
+            dspd.id = Int32.Parse(mlvDataSkripsi.SelectedItems[0].SubItems[0].Text);
             dspd.ShowDialog();
         }
 
